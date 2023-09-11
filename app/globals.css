@@ -7,3 +7,7 @@ body,
 :root {
   height: 100%;
 }
+
+.bill-bg {
+  background: #0000005c;
+}
