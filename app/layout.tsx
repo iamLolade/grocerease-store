@@ -1,5 +1,3 @@
-import { Urbanist } from 'next/font/google'
-
 import ModalProvider from '@/providers/modal-provider'
 import ToastProvider from '@/providers/toast-provider'
 import Navbar from '@/components/navbar'
@@ -7,10 +5,9 @@ import Footer from '@/components/footer'
 
 import './globals.css'
 
-const font = Urbanist({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Grocerease Store',
+  title: 'Grocstack Store',
   description: 'The place for all your grocery purchases.',
 }
 
@@ -21,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body>
         <ToastProvider />
         <ModalProvider />
         <Navbar />
