@@ -13,10 +13,10 @@ const Navbar = async () => {
   return ( 
     <div className="border-b">
       <Container>
-        <div className="relative px-4 sm:px-4 lg:px-8 flex h-16 items-center">
+        <div className="relative px-4 sm:px-4 lg:px-8 flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center ml-0 lg:ml-0">
             <Image src='/ekaette-logo.png' alt='brandlogo' width={80} height={80} />
-            <p className="font-bold text-xl ml-0">Grocstack</p>
+            <p className="font-bold text-2xl ml-0">Grocstack</p>
           </Link>
           <MainNav data={categories} />
           <NavbarActions />

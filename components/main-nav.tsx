@@ -28,7 +28,7 @@ const MainNav: React.FC<MainNavProps> = ({
   }));
 
   return (
-    <div>
+    <div className="ml-auto">
       <nav
         className="hidden md:block mx-6 items-center space-x-3 md:space-x-6 lg:space-x-8"
       >
