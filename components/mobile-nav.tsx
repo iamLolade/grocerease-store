@@ -49,7 +49,7 @@ const MobileNav: React.FC<MainNavProps> = ({
                 onClick={toggleMenu}
                 className={cn(
                 'text-md font-semibold transition-colors hover:text-black',
-                route.active ? 'text-black' : 'text-black',
+                route.active ? 'hover:text-gray-500' : 'hover:text-gray-500',
                 'lg:hidden', isMenuOpen  ? '' : 'hidden',
                 ' opacity-80 transform'
                 )}
