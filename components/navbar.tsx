@@ -5,6 +5,7 @@ import Container from "@/components/ui/container";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
 import Image from "next/image";
+import MobileNav from "./mobile-nav";
 
 const Navbar = async () => {
   const categories = await getCategories();
@@ -12,13 +13,14 @@ const Navbar = async () => {
   return ( 
     <div className="border-b">
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
-          <Link href="/" className="flex items-center lg:ml-0">
+        <div className="relative px-4 sm:px-4 lg:px-8 flex h-16 items-center">
+          <Link href="/" className="flex items-center ml-0 lg:ml-0">
             <Image src='/ekaette-logo.png' alt='brandlogo' width={80} height={80} />
             <p className="font-bold text-xl ml-0">Grocstack</p>
           </Link>
           <MainNav data={categories} />
           <NavbarActions />
+          <MobileNav data={categories} />
         </div>
       </Container>
     </div>
