@@ -27,6 +27,7 @@ const MainNav: React.FC<MainNavProps> = ({
     active: pathname === `/category/${route.id}`,
   }));
 
+  
   return (
     <div className="ml-auto">
       <nav
